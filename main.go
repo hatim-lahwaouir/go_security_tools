@@ -60,7 +60,7 @@ func main() {
 
 	flag.StringVar(&host, "host", "locolhost", "host to scan")
 	flag.UintVar(&startingPort, "start_port", 1, "starting port Number")
-	flag.UintVar(&lastPort, "last_port", 3000, "starting port Number")
+	flag.UintVar(&lastPort, "last_port", 3000, "last port Number")
 	flag.UintVar(&requestPerSecond, "rps", 100, "request per second")
 	flag.Parse()
 	// args host start_port end_port requestPerSecond
@@ -73,7 +73,7 @@ func main() {
 		wg          sync.WaitGroup
 	)
 
-	nWorker = 10
+	nWorker = 20
 	ports = make(chan uint, 500)
 
 
