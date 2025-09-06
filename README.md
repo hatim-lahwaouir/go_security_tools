@@ -24,3 +24,25 @@ Usage of ./main:
 start scanning : google.com
 port is up 443
 ```
+
+
+
+# search_repo 
+Repo search helps you search for leaking keys that may be forgotten in some old commit inside a repo
+## Usage
+
+```python
+./main "regex expression"
+```
+
+
+## Example
+
+```python
+./main "API"
+-- searching this commit c9dd4f7 --
+At file README.md
+At file main
+```
+
+
